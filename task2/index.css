@@ -373,7 +373,7 @@ body {
 
 @media screen and (max-width: 320px) {
     .container {
-        padding: 20px 0 60px 0;
+        padding: 0;
     }
 
     .header {
@@ -381,21 +381,48 @@ body {
     }
 
     .redBall {
-        display: none;
+        position: absolute;
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        top: 90%;
+        left: 8%;
+        filter: blur(5px);
     }
 
     .purpleBall {
-        display: none;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        left: 90%;
     }
 
     .littleRedBall {
         display: none;
     }
 
+    .redLight {
+        position: absolute;
+        width: 211px;
+        height: 211px;
+        top: 70%;
+        left: 10%;
+    }
+
+    .purpleLight {
+        position: absolute;
+        width: 260px;
+        height: 260px;
+        top: 50%;
+        left: 90%;
+    }
+
 
     .mobileHeader {
+        background: black;
         display: flex;
-        padding: 0 16px 20px 16px;
+        padding: 20px 16px 20px 16px;
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
@@ -404,13 +431,15 @@ body {
     }
 
     .mainInformation {
+        position: relative;
         max-width: 320px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        padding: 0 38px 65px 14px;
+        padding: 40px 38px 65px 14px;
         gap: 15px;
+        background-image: url("assets/noise.svg");
     }
 
     .leftSide {
@@ -450,6 +479,7 @@ body {
         flex-direction: column;
         max-width: 272px;
         width: 100%;
+        padding-top: 25px;
     }
 
     .titleRight {
@@ -523,10 +553,10 @@ body {
     .footer {
         display: flex;
         flex-direction: column;
-        max-width: 288px;
+        padding: 35px 46px 25px 15px;
         width: 100%;
-        gap: 20px;
-        padding-top: 35px;
+        gap: 30px;
+        background: black;
     }
 
     .footerTitle {
@@ -573,6 +603,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        min-width: 100px;
     }
 
     .footerContacts {
@@ -596,17 +627,16 @@ body {
     }
 
     .additionalInfo {
-        padding-top: 50px;
-        padding-bottom: 60px;
+        padding: 25px 66px 60px 15px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        max-width: 288px;
         width: 100%;
         font-family: Montserrat, sans-serif;
         font-weight: 400;
         font-size: 12px;
         text-align: right;
+        background: black;
     }
 
     .link {

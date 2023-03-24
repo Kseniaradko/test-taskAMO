@@ -6,9 +6,9 @@ const timerEl = document.querySelector('span');
 // который будет анимировать timerEl
 
 //Сделала переменную для того, чтобы во время заведения нового таймера при работающем старом, начался новый таймер
-let timerId;
 
 const createTimerAnimator = () => {
+    let timerId;
     return (seconds) => {
         if (timerId) {
             clearInterval(timerId)
